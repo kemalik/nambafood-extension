@@ -10,12 +10,13 @@
    "default_popup": "popup.html",
    "default_title": "Start filter"
   },
+  "homepage_url": "https://www.facebook.com/malik.kekenov",
   "permissions": [
    "activeTab",
    "http://*/*" 
    ],
    "content_scripts": [ {
         "js": [ "jquery.min.js", "popup.js" ],
-        "matches": [ "http://*/*", "https://*/*" ] 
+        "matches": [ "*://nambafood.kg/*"] 
 } ]
 }

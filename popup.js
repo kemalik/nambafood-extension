@@ -1,7 +1,9 @@
 jQuery(document).ready(function($) {
 	$('.price').each(function(){
-		if(parseInt($(this).text())<200){
-			$(this).parents('form').css('background', 'green')
+		var food = $(this).parents('.bordered-block');
+		var food_price = parseFloat($(this).text().replace(',',''))
+		if(food_price<100){
+			food.css('background', 'lightgreen')
 		}
 	})
 });
