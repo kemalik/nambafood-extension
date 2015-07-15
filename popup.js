@@ -1,9 +1,10 @@
 jQuery(document).ready(function($) {
-	$('.price').each(function(){
-		var food = $(this).parents('.bordered-block');
-		var food_price = parseFloat($(this).text().replace(',',''))
-		if(food_price<100){
-			food.css('background', 'lightgreen')
-		}
-	})
+	var bgPage = chrome.extension.getBackgroundPage();
+ 	$('#filter').click(function(){
+ 		var min = $('#min-price').val();
+ 		var max = $('#max-price').val();
+ 		var hide = $('#hide_other').is(':checked');
+ 		var combine = $('#combine').is(':checked');
+ 		chrome.tabs.executeScript(null, {code:"filter("+min+","+max+","+hide+","+combine+");"});
+	});
 });

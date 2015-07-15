@@ -1,17 +1,20 @@
 <!doctype html>
 <html>
   <head>
-    <title>Food filter</title>
+    <title>Nambafood filter</title>
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>Food filter</h1>
+    <h1>Nambafood filter</h1>
     <label for="min-price">Min price</label>
     <input id="min-price" type="number" value="0" name="min-price"><br>
     <label for="max-price">Max price</label>
-    <input id="max-price" type="number" value="0" name="max-price"><br>
+    <input id="max-price" type="number" value="160" name="max-price"><br>
+    <label for="hide_other">Hide other</label>
+    <input id="hide_other" type="checkbox" name="hide_other"><br>
+    <label for="combine">Combine results</label>
+    <input id="combine" type="checkbox" name="combine"><br>
     <button id="filter">Filter foods</button>
-    
   </body>
 </html>
