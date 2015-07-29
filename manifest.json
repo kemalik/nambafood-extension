@@ -10,6 +10,9 @@
    "default_popup": "popup.html",
    "default_title": "Start filter"
   },
+  "icons": { "16": "nambafood.png",
+           "48": "nambafood.png",
+          "128": "nambafood.png" },
   "homepage_url": "https://www.facebook.com/malik.kekenov",
   "permissions": [
    "activeTab",
